@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="XmassTree">
+    <output-path>$PROJECT_DIR$/out/artifacts/XmassTree</output-path>
+    <root id="archive" name="XmassTree.jar">
+      <element id="library" level="project" name="commons-lang3-3.7" />
+    </root>
+  </artifact>
+</component>
