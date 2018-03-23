@@ -9,7 +9,7 @@ public class OptionChoice {
     public void Menu() {
         ScannerValidation inputValidator = new ScannerValidation();
         do {
-            System.out.println("Podaj typ choinki jaki chcesz utworzyć:\n   -'up' klasyczna choinka\n   -'left' choinka zwrocona w lewo\n   -'right' choinka zwrocona w prawo\n   -'upsidedown' choinka zwrocona czubkiem w dol\n   -'extra' choinka z dodatkami");
+            System.out.println("\nPodaj typ choinki jaki chcesz utworzyć:\n   -'up' klasyczna choinka\n   -'left' choinka zwrocona w lewo\n   -'right' choinka zwrocona w prawo\n   -'upsidedown' choinka zwrocona czubkiem w dol\n   -'extra' choinka z dodatkami");
             switch (inputValidator.inputTreeName()) {
                 case "up":{
                     System.out.println("Podaj wartosc wysokosci choinki (Pamietaj aby byly wieksze od zera!)  \n");

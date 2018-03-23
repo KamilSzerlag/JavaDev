@@ -23,12 +23,18 @@ public class ScannerValidation {
 
     public String inputTreeName() {
         String name;
+        boolean badchoice = false;
         do {
-           // System.out.println("Enter on of tree Direction (UP,RIGHT,LEFT,UPSIDEDOWN) which you want to print");
+            if(badchoice == true)
+            {
+                System.out.println("Przpraszam, ale podales bledna nazwe :(\n Sprobuj jeszcze raz!");
+            }
+           //System.out.println("Enter on of tree Direction (UP,RIGHT,LEFT,UPSIDEDOWN) which you want to print");
             name = input.next();
             name = name.toLowerCase();
-            System.out.println("Wybrales: "+ name);
-        } while (!name.equals("up") && !name.equals("upsidedown")&&!name.equals("left")&&!name.equals("right")&&!name.equals("koniec"));
+            badchoice = true;
+        } while (!name.equals("up") && !name.equals("upsidedown")&&!name.equals("left")&&!name.equals("right")&&!name.equals("extra")&&!name.equals("koniec"));
+        System.out.println("Wybrales: "+ name);
     return name;
     }
 }
